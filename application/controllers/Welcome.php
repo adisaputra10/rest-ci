@@ -28,7 +28,10 @@ class Welcome extends CI_Controller {
             ['id' => 3, 'name' => 'Jane', 'email' => 'jane@example.com', 'fact' => 'Lives in the USA', ['hobbies' => ['guitar', 'cycling']]],
         ];
 		$method = $_SERVER['REQUEST_METHOD'];
-		json_output(400,array('status' => 400,'message' => "hai ini Rest dengan codeigniter") );
+		json_output(400,array('status' => 400,'message' => "hai ini Rest api dengan codeigniter") );
+
+
+		//json_output(400,array('status' => 400,$users) );
 		//$this->load->view('welcome_message');
 	}
 }
